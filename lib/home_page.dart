@@ -82,14 +82,63 @@ class HomePage extends StatelessWidget{
       backgroundColor: const Color.fromARGB(255, 235, 97, 6),
 
       
-      body: Text('Welcome to NotesVault',
-      style: GoogleFonts.lobster(
-        textStyle: TextStyle(fontSize: 30,
-         color: const Color.fromARGB(255, 255, 255, 255), 
-         fontWeight: FontWeight.bold,
-         ),
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children :[
+          TextButton(
+          onPressed: (){}, 
+          style: TextButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor: const Color.fromARGB(255, 235, 97, 6),
+            padding: EdgeInsets.all(16.0),
+            textStyle: GoogleFonts.lobster(
+            textStyle: TextStyle(fontSize: 20,
+           color: const Color.fromARGB(255, 235, 97, 6),
+           fontWeight: FontWeight.bold,
+          ),
+        ),
+          ),
+          child: Text("textButton",),
+          ),
+          ElevatedButton(onPressed: (){},
+          style: ElevatedButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor: const Color.fromARGB(255, 235, 97, 6),
+            padding: EdgeInsets.all(16.0),
+            textStyle: GoogleFonts.lobster(
+          textStyle: TextStyle(fontSize: 20,
+           color: const Color.fromARGB(255, 235, 97, 6),
+           fontWeight: FontWeight.bold,
+          ),
+        ),
+          ),
+          child: Text("ElevatedButton",
+          )
+          ), 
+          OutlinedButton(onPressed: (){}, 
+          style: OutlinedButton.styleFrom(
+            padding: EdgeInsets.all(16.0),
+            foregroundColor: Colors.white,
+            backgroundColor: const Color.fromARGB(255, 235, 97, 6),
+            textStyle: GoogleFonts.lobster(
+          textStyle: TextStyle(fontSize: 20,
+           color: const Color.fromARGB(255, 235, 97, 6),
+           fontWeight: FontWeight.bold,
+          ),
+        ),
+          ),
+          child: Text("OutlinedButton",
+          ),
+          
+          ),
+          IconButton(onPressed: (){}, 
+          icon: Icon(Icons.add),),
+        
+        ],
+        
+        ),
       ),
-    ),
 
     floatingActionButton: FloatingActionButton(
       onPressed: (){},
